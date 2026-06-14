@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#instalacion-del-entorno" class="md-skip">
+        <a href="#instalacion-del-sistema" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -392,6 +392,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#descargar-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descargar el proyecto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#crear-entorno-virtual" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -403,10 +414,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verificar-instalacion" class="md-nav__link">
+  <a href="#configurar-la-base-de-datos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verificar instalación
+        Configurar la base de datos
       
     </span>
   </a>
@@ -414,10 +425,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejecutar-el-sitio-localmente" class="md-nav__link">
+  <a href="#ejecutar-el-sistema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ejecutar el sitio localmente
+        Ejecutar el sistema
       
     </span>
   </a>
@@ -425,10 +436,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generar-el-sitio-estatico" class="md-nav__link">
+  <a href="#verificar-funcionamiento" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generar el sitio estático
+        Verificar funcionamiento
       
     </span>
   </a>
@@ -519,6 +530,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#descargar-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descargar el proyecto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#crear-entorno-virtual" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -530,10 +552,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verificar-instalacion" class="md-nav__link">
+  <a href="#configurar-la-base-de-datos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verificar instalación
+        Configurar la base de datos
       
     </span>
   </a>
@@ -541,10 +563,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejecutar-el-sitio-localmente" class="md-nav__link">
+  <a href="#ejecutar-el-sistema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ejecutar el sitio localmente
+        Ejecutar el sistema
       
     </span>
   </a>
@@ -552,10 +574,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generar-el-sitio-estatico" class="md-nav__link">
+  <a href="#verificar-funcionamiento" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generar el sitio estático
+        Verificar funcionamiento
       
     </span>
   </a>
@@ -590,8 +612,8 @@
 
 
 
-<h1 id="instalacion-del-entorno">Instalación del entorno<a class="headerlink" href="#instalacion-del-entorno" title="Permanent link">&para;</a></h1>
-<p>Esta sección explica cómo preparar el entorno para ejecutar y documentar el Sistema de Ventas Simple.</p>
+<h1 id="instalacion-del-sistema">Instalación del sistema<a class="headerlink" href="#instalacion-del-sistema" title="Permanent link">&para;</a></h1>
+<p>Esta sección explica cómo preparar un entorno local para ejecutar el <strong>Sistema de Ventas Simple</strong>. El objetivo es que el usuario pueda instalar las dependencias básicas, configurar el proyecto y dejarlo listo para pruebas.</p>
 <h2 id="requisitos-previos">Requisitos previos<a class="headerlink" href="#requisitos-previos" title="Permanent link">&para;</a></h2>
 <p>Antes de iniciar, se recomienda tener instalado:</p>
 <ul>
@@ -599,48 +621,109 @@
 <li>pip</li>
 <li>Git</li>
 <li>Visual Studio Code</li>
-<li>Una cuenta de GitHub</li>
+<li>Un navegador web</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Importante</p>
-<p>En Windows, al instalar Python, marca la opción <strong>Add Python to PATH</strong>. Esto permite ejecutar comandos como <code>python</code>, <code>pip</code> y <code>mkdocs</code> desde la terminal.</p>
 </div>
+<p>En Windows, al instalar Python, se recomienda marcar la opción <strong>Add Python to PATH</strong>. Esto permite ejecutar comandos como <code>python</code> y <code>pip</code> desde la terminal.</p>
+<h2 id="descargar-el-proyecto">Descargar el proyecto<a class="headerlink" href="#descargar-el-proyecto" title="Permanent link">&para;</a></h2>
+<p>El primer paso consiste en clonar el repositorio del sistema desde GitHub:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/usuario/sistema-ventas-simple.git
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>sistema-ventas-simple
+</code></pre></div>
+<blockquote>
+<p>Reemplaza <code>usuario</code> por el nombre real de la cuenta o repositorio correspondiente.</p>
+</blockquote>
 <h2 id="crear-entorno-virtual">Crear entorno virtual<a class="headerlink" href="#crear-entorno-virtual" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">macOS / Linux</label></div>
+<p>Para mantener las dependencias del sistema separadas del resto del equipo, se recomienda utilizar un entorno virtual.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">python</span> <span class="n">-m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">activate</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">pip</span> <span class="n">install</span> <span class="n">mkdocs</span> <span class="n">mkdocs-material</span> <span class="n">pymdown-extensions</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>pymdown-extensions
-</code></pre></div>
+<div class="tabbed-block"></div>
 </div>
 </div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>```powershell
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>python -m venv .venv
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>.venv\Scripts\activate
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>pip install -r requirements.txt
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>```
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS / Linux</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<h2 id="verificar-instalacion">Verificar instalación<a class="headerlink" href="#verificar-instalacion" title="Permanent link">&para;</a></h2>
-<p>Ejecuta el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdocs<span class="w"> </span>--version
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>```bash
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3 -m venv .venv
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>source .venv/bin/activate
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>pip install -r requirements.txt
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>```
 </code></pre></div>
-<p>Si todo está correctamente instalado, deberías ver la versión de MkDocs.</p>
-<h2 id="ejecutar-el-sitio-localmente">Ejecutar el sitio localmente<a class="headerlink" href="#ejecutar-el-sitio-localmente" title="Permanent link">&para;</a></h2>
-<p>Para visualizar la documentación en el navegador:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdocs<span class="w"> </span>serve
+<h2 id="configurar-la-base-de-datos">Configurar la base de datos<a class="headerlink" href="#configurar-la-base-de-datos" title="Permanent link">&para;</a></h2>
+<p>El sistema puede utilizar una base de datos sencilla para almacenar productos, clientes y ventas. Como ejemplo, se puede usar SQLite para un ambiente de prueba local.</p>
+<p>Ejemplo de estructura inicial:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">productos</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="n">id_producto</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">nombre</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="n">precio</span><span class="w"> </span><span class="nb">REAL</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">stock</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">);</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">clientes</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="n">id_cliente</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="n">nombre</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="n">telefono</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="n">correo</span><span class="w"> </span><span class="nb">TEXT</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">);</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">ventas</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="n">id_venta</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="n">id_cliente</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="n">fecha</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="nb">REAL</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="p">);</span>
 </code></pre></div>
-<p>Luego abre esta dirección:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>http://127.0.0.1:8000
+<h2 id="ejecutar-el-sistema">Ejecutar el sistema<a class="headerlink" href="#ejecutar-el-sistema" title="Permanent link">&para;</a></h2>
+<p>Una vez instaladas las dependencias y configurada la base de datos, se puede iniciar la aplicación con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>app.py
 </code></pre></div>
-<h2 id="generar-el-sitio-estatico">Generar el sitio estático<a class="headerlink" href="#generar-el-sitio-estatico" title="Permanent link">&para;</a></h2>
-<p>Cuando la documentación esté lista, puedes generar la versión final con:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdocs<span class="w"> </span>build
+<p>Luego, el sistema estará disponible desde el navegador en la siguiente dirección:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>http://127.0.0.1:5000
 </code></pre></div>
-<p>Este comando crea la carpeta <code>site/</code>, donde se almacena el sitio listo para publicar.</p>
+<h2 id="verificar-funcionamiento">Verificar funcionamiento<a class="headerlink" href="#verificar-funcionamiento" title="Permanent link">&para;</a></h2>
+<p>Para comprobar que la instalación fue exitosa, se recomienda realizar estas pruebas básicas:</p>
+<table>
+<thead>
+<tr>
+<th>Prueba</th>
+<th>Resultado esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registrar producto</td>
+<td>El producto queda guardado en el inventario.</td>
+</tr>
+<tr>
+<td>Registrar cliente</td>
+<td>El cliente queda disponible para futuras ventas.</td>
+</tr>
+<tr>
+<td>Crear venta</td>
+<td>La venta se almacena correctamente.</td>
+</tr>
+<tr>
+<td>Consultar reporte</td>
+<td>Se muestra el resumen de ventas realizadas.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Recomendación</p>
+</div>
+<p>Antes de registrar ventas, verifica que existan productos con stock disponible y clientes registrados.</p>
 <h2 id="siguiente-paso">Siguiente paso<a class="headerlink" href="#siguiente-paso" title="Permanent link">&para;</a></h2>
-<p>Después de instalar el entorno, revisa la sección de <a href="../uso/">Uso del sistema</a>.</p>
+<p>Después de preparar el entorno, puedes continuar con la sección de <a href="../uso/">Uso del sistema</a>.</p>
 
 
 
