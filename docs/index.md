@@ -1,6 +1,6 @@
 # Sistema de Ventas Simple
 
-![Imagen del sistema de ventas](img/ventas.png)
+![Imagen del sistema de ventas](img/dashboard-ventas.svg)
 
 El **Sistema de Ventas Simple** es una aplicación básica diseñada para registrar productos, clientes y ventas de una pequeña empresa o negocio.
 
